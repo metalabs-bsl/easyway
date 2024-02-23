@@ -141,35 +141,17 @@ accordionTops.forEach(function (accordionTop, index) {
 // SWIPER ------------------------------
 
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
     direction: 'horizontal',
     slidesPerView: 2,
-    loop: true,
-
-    // If we need pagination
+    // loop: true,
     pagination: {
         el: '.swiper-pagination',
     },
-
-    // Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
 });
-
-const swiperBtnPrev = document.querySelector('.swiper-button-prev')
-const swiperBtnNext = document.querySelector('.swiper-button-next')
-
-swiperBtnPrev.addEventListener('click', () => {
-    swiperBtnPrev.classList.add('active')
-    swiperBtnNext.classList.remove('active')
-})
-swiperBtnNext.addEventListener('click', () => {
-    swiperBtnNext.classList.add('active')
-    swiperBtnPrev.classList.remove('active')
-})
-
 // SWIPER -- ends ---------------------
 
 
@@ -249,9 +231,6 @@ const sendInfo = async (form) => {
         const resp = await data.text()
         if (resp === 'OK') {
           formSuccessfully.classList.add('active')
-          formSuccessfullyCloseBtn.addEventListener('click', () => {
-          formSuccessfully.classList.remove('active')
-          })
           setTimeout(() => {
             formSuccessfully.classList.remove('active')
           }, 3000)
