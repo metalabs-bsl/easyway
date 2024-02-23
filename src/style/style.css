@@ -204,7 +204,7 @@ body {
   position: absolute;
   padding: 20px;
   left: 0;
-  top: 65px;
+  top: 64.2px;
   width: 100%;
   height: calc(100vh - 76px);
   transform: translateX(2000%);
@@ -328,6 +328,34 @@ body {
   bottom: -100px;
   background: url("../images/map.png") no-repeat center/contain;
   z-index: -1;
+}
+
+.license {
+  padding: 100px 0;
+}
+.license__container {
+  margin: 0 15px;
+  position: relative;
+  padding: 65px 50px;
+  border-radius: 15px;
+  background-color: #393939;
+  overflow: hidden;
+}
+.license__container::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 20px;
+  width: 550px;
+  height: 330px;
+  background: url("../images/license.png") no-repeat center/cover;
+  transform: rotate(-11deg);
+}
+.license__title {
+  max-width: 600px;
+  text-align: right;
+  margin: 0 0 0 auto;
+  color: var(--white);
 }
 
 .services {
@@ -1367,6 +1395,17 @@ body {
     height: 400px;
     bottom: 0;
   }
+  .license__container {
+    padding: 30px 40px;
+  }
+  .license__container::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    width: 329px;
+    height: 220px;
+  }
   .employee__blocks {
     height: 235px;
   }
@@ -1400,6 +1439,25 @@ body {
     width: 430px;
     height: 300px;
     bottom: 100px;
+  }
+  .license {
+    padding: 50px 0;
+  }
+  .license__container {
+    padding: 30px 40px;
+  }
+  .license__container::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    width: 280px;
+    height: 180px;
+  }
+  .license__title {
+    position: relative;
+    max-width: 500px;
+    z-index: 2;
   }
   .services {
     padding: 80px 0;
@@ -1555,6 +1613,24 @@ body {
     right: 0;
     bottom: 0;
     margin: 0 auto;
+  }
+  .license__container {
+    padding: 30px 15px 0;
+  }
+  .license__container::before {
+    content: "";
+    position: absolute;
+    top: -22px;
+    left: -5px;
+    width: 230px;
+    height: 167px;
+  }
+  .license__title {
+    position: relative;
+    max-width: 410px;
+    z-index: 2;
+    margin-bottom: 0;
+    font-size: 23px;
   }
   .services {
     padding: 0 0 60px;
@@ -1726,6 +1802,24 @@ body {
   .hero__desc {
     font-size: 18px;
     border-radius: 5px;
+  }
+  .license__container {
+    padding: 30px 15px 0;
+  }
+  .license__container::before {
+    content: "";
+    position: absolute;
+    top: -11px;
+    left: -5px;
+    width: 160px;
+    height: 107px;
+  }
+  .license__title {
+    position: relative;
+    max-width: 380px;
+    z-index: 2;
+    margin-bottom: 0;
+    font-size: 23px;
   }
   .services {
     padding: 0 0 25px;
