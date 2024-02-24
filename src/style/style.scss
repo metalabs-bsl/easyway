@@ -386,8 +386,7 @@ body {
 .license {
   padding: 100px 0;
 
-  &__container {
-    margin: 0 15px;
+  &__wrapper {
     position: relative;
     padding: 65px 50px;
     border-radius: 15px;
@@ -1010,7 +1009,7 @@ body {
         &.active {
           z-index: 1;
           height: auto;
-          transform: translateY(55%);
+          transform: translateY(44%);
         }
       }
 
@@ -1717,7 +1716,7 @@ body {
 
   .license {
 
-    &__container {
+    &__wrapper {
       padding: 30px 40px;
 
       &::before {
@@ -1784,7 +1783,7 @@ body {
   .license {
     padding: 50px 0;
 
-    &__container {
+    &__wrapper {
       padding: 30px 40px;
 
       &::before {
@@ -2035,7 +2034,7 @@ body {
 
   .license {
 
-    &__container {
+    &__wrapper {
       padding: 30px 15px 0;
 
       &::before {
@@ -2067,6 +2066,14 @@ body {
 
   .advantages {
     padding: 60px 0;
+
+    &__list {
+      align-items: center;
+
+      &::before {
+        display: none;
+      }
+    }
 
     &__numbers {
       font-size: 30px;
@@ -2315,7 +2322,7 @@ body {
 
   .license {
 
-    &__container {
+    &__wrapper {
       padding: 30px 15px 0;
 
       &::before {

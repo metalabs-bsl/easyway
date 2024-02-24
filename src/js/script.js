@@ -84,12 +84,12 @@ const mask = IMask(element, maskOptions);
 
 // Устанавливаем начальные значения для российского номера
 const initialMask = '+7(000)000-00-00';
-const initialFlag = '🇷🇺';
+const initialFlag = "./src/images/ru.svg";
 
 mask.unmaskedValue = '7'; // Начальное значение кода страны
 mask.updateOptions({ mask: '+{7}(000)000-00-00' }); // Обновляем маску
 
-flagSpan.textContent = initialFlag;
+const flagImg = document.querySelector(".custom-select__flag-icon") 
 
 const options = document.querySelectorAll('.custom-select__options');
 
@@ -100,7 +100,7 @@ options.forEach(option => {
     const selectedInitValue = this.getAttribute('data-value');
     mask.updateOptions({ mask: selectedMask });
     mask.unmaskedValue = selectedInitValue
-    flagSpan.textContent = selectedFlag;
+    flagImg.src = selectedFlag
     element.focus();
   });
 });

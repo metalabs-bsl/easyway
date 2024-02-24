@@ -333,15 +333,14 @@ body {
 .license {
   padding: 100px 0;
 }
-.license__container {
-  margin: 0 15px;
+.license__wrapper {
   position: relative;
   padding: 65px 50px;
   border-radius: 15px;
   background-color: #393939;
   overflow: hidden;
 }
-.license__container::before {
+.license__wrapper::before {
   content: "";
   position: absolute;
   top: -50px;
@@ -848,7 +847,7 @@ body {
 .appliaction .form .custom-select__wrapper.active {
   z-index: 1;
   height: auto;
-  transform: translateY(55%);
+  transform: translateY(44%);
 }
 .appliaction .form .custom-select__options {
   padding: 5px 10px;
@@ -1395,10 +1394,10 @@ body {
     height: 400px;
     bottom: 0;
   }
-  .license__container {
+  .license__wrapper {
     padding: 30px 40px;
   }
-  .license__container::before {
+  .license__wrapper::before {
     content: "";
     position: absolute;
     top: -20px;
@@ -1443,10 +1442,10 @@ body {
   .license {
     padding: 50px 0;
   }
-  .license__container {
+  .license__wrapper {
     padding: 30px 40px;
   }
-  .license__container::before {
+  .license__wrapper::before {
     content: "";
     position: absolute;
     top: -20px;
@@ -1614,10 +1613,10 @@ body {
     bottom: 0;
     margin: 0 auto;
   }
-  .license__container {
+  .license__wrapper {
     padding: 30px 15px 0;
   }
-  .license__container::before {
+  .license__wrapper::before {
     content: "";
     position: absolute;
     top: -22px;
@@ -1640,6 +1639,12 @@ body {
   }
   .advantages {
     padding: 60px 0;
+  }
+  .advantages__list {
+    align-items: center;
+  }
+  .advantages__list::before {
+    display: none;
   }
   .advantages__numbers {
     font-size: 30px;
@@ -1803,10 +1808,10 @@ body {
     font-size: 18px;
     border-radius: 5px;
   }
-  .license__container {
+  .license__wrapper {
     padding: 30px 15px 0;
   }
-  .license__container::before {
+  .license__wrapper::before {
     content: "";
     position: absolute;
     top: -11px;
