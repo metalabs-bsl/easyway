@@ -226,7 +226,7 @@ body {
     position: absolute;
     padding: 20px;
     left: 0;
-    top: 65px;
+    top: 64.2px;
     width: 100%;
     height: calc(100vh - 76px);
     transform: translateX(2000%);
@@ -381,6 +381,39 @@ body {
 }
 
 // ------- HERO -- end -------
+
+// -------------- LICENSE --------------
+.license {
+  padding: 100px 0;
+
+  &__wrapper {
+    position: relative;
+    padding: 65px 50px;
+    border-radius: 15px;
+    background-color: #393939;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -50px;
+      left: 20px;
+      width: 550px;
+      height: 330px;
+      background: url("../images/license.png") no-repeat center/cover;
+      transform: rotate(-11deg);
+    }
+  }
+
+  &__title {
+    max-width: 600px;
+    text-align: right;
+    margin: 0 0 0 auto;
+    color: var(--white);
+  }
+}
+
+// -------------- LICENSE -- ends --------------
 
 
 // ------- SERVICES -------
@@ -976,7 +1009,7 @@ body {
         &.active {
           z-index: 1;
           height: auto;
-          transform: translateY(55%);
+          transform: translateY(44%);
         }
       }
 
@@ -1681,6 +1714,22 @@ body {
     }
   }
 
+  .license {
+
+    &__wrapper {
+      padding: 30px 40px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -20px;
+        left: 20px;
+        width: 329px;
+        height: 220px;
+      }
+    }
+  }
+
   .employee {
     &__blocks {
       height: 235px;
@@ -1728,6 +1777,29 @@ body {
         height: 300px;
         bottom: 100px;
       }
+    }
+  }
+
+  .license {
+    padding: 50px 0;
+
+    &__wrapper {
+      padding: 30px 40px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -20px;
+        left: 20px;
+        width: 280px;
+        height: 180px;
+      }
+    }
+
+    &__title {
+      position: relative;
+      max-width: 500px;
+      z-index: 2;
     }
   }
 
@@ -1960,6 +2032,30 @@ body {
     }
   }
 
+  .license {
+
+    &__wrapper {
+      padding: 30px 15px 0;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -22px;
+        left: -5px;
+        width: 230px;
+        height: 167px;
+      }
+    }
+
+    &__title {
+      position: relative;
+      max-width: 410px;
+      z-index: 2;
+      margin-bottom: 0;
+      font-size: 23px;
+    }
+  }
+
   .services {
     padding: 0 0 60px;
 
@@ -1970,6 +2066,14 @@ body {
 
   .advantages {
     padding: 60px 0;
+
+    &__list {
+      align-items: center;
+
+      &::before {
+        display: none;
+      }
+    }
 
     &__numbers {
       font-size: 30px;
@@ -2162,6 +2266,7 @@ body {
 }
 
 @media (max-width: 500px) {
+
   .header {
     &__logo {
       & img {
@@ -2212,6 +2317,30 @@ body {
     &__desc {
       font-size: 18px;
       border-radius: 5px;
+    }
+  }
+
+  .license {
+
+    &__wrapper {
+      padding: 30px 15px 0;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -11px;
+        left: -5px;
+        width: 160px;
+        height: 107px;
+      }
+    }
+
+    &__title {
+      position: relative;
+      max-width: 380px;
+      z-index: 2;
+      margin-bottom: 0;
+      font-size: 23px;
     }
   }
 
