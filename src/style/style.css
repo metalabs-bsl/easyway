@@ -146,7 +146,7 @@ body {
   transition: all 0.3s;
 }
 .header__links:hover {
-  color: var(--black);
+  color: var(--red);
 }
 .header__btn {
   padding: 15px 28px;
